@@ -1,0 +1,219 @@
+/*-------------------------------------
+| root
+-------------------------------------*/
+body {
+	background-color: #d9cee6;
+	/*margin: 0px;*/
+	font-family: Verdana, sans-serif;
+}
+/*body.sub { background-color: #A5332D; }*/
+
+/*-------------------------------------
+| centering technique for rows
+-------------------------------------*/
+.inset {
+	/*outline: solid 1px red;*/
+	width: 800px;
+	margin: auto;
+}
+
+/*-------------------------------------
+| core elements
+-------------------------------------*/
+header, footer {
+	/*line-height: 200px;*/
+	/*text-align: center;*/
+	/*background-color: #3597A5;*/
+	/*padding: 20px;*/
+	font-size: 80px;
+}
+
+
+#mainmenu {
+	text-align: right;
+	position: absolute;
+	top: 20px;
+	right: 100px;
+	font-size: 20px;
+
+	/*background-color: #27737E;*/
+	/*padding: 20px;
+	margin: 0px;*/
+}
+section {
+	/*background-color: #6EC2CB;
+	padding: 20px;*/
+	/*min-height: 600px;*/
+}
+section:nth-of-type(even) { /*background-color: #7CDDE8;*/ }
+
+p { text-align: justify; }
+
+/*-------------------------------------
+| nav general
+-------------------------------------*/
+nav { text-align: center; /*margin: 20px 0;*/ }
+.folio a {
+	display: inline-block;
+	padding: 0 50px;
+	line-height: 50px;
+	text-decoration: none;
+	background-color: #a28ba9;
+	color: #fff;
+	border-radius: 10px 10px 0 0;
+	width: 162px;
+}
+nav a:hover { color: #783d8a; }
+nav a.chosen { color: #08191C; background-color: #fff;}
+.folio a.selected {background-color: #655b88;}
+
+/*-------------------------------------
+| Pinned Nav
+-------------------------------------*/
+body.nav-pinned #mainmenu {
+	/*position: fixed;*/
+	/*left: 0; right: 0; top: 0;*/
+	/*z-index: 900;*/
+}
+body.nav-pinned header {
+	margin-bottom: 90px;
+}
+
+/*-------------------------------------
+| AJAX
+-------------------------------------*/
+.target {
+	/*border: solid 5px #3484A7;*/
+	background-color: #a28ba9;
+	/*padding: 10px;*/
+	/*min-height: 600px;*/
+	/*margin: auto;*/
+}
+#gallery {
+	width: 600px;
+	/*height: 300px;*/
+	/*border: solid 10px #2A49B8;*/
+	margin: auto;
+	position: relative;
+}
+#gallery .slides {
+	border: solid 2px #4c335f;
+	width: 600px;
+	height: 300px;
+	position: relative;
+	overflow: hidden;
+}
+#gallery .slides img {
+	position: absolute;
+	left: 0; top: 0;
+}
+#gallery .arrows div {
+	font-size: 70px;
+	position: absolute;
+	top: 110px;
+}
+
+#gallery .arrows div.left { left: -100px; }
+#gallery .arrows div.right { right: -100px; }
+
+#lightGallery #gallery {
+	width: 800px;
+	border: solid 2px #4c335f;
+	margin: auto;
+
+	font-size: 0;
+}
+#lightGallery #gallery img {
+
+	width: 400px;
+	height: auto;
+}
+
+#lbox {
+	display: none;
+	background-color: #000;
+	background-color: rgba(0,0,0,.75);
+	position: fixed;
+	left: 0; right: 0; top: 0; bottom: 0;
+}
+
+#lbox .light {
+	background-color: #fff;
+	width: 800px;	height: 400px;
+	position: fixed;
+	left: 0; right: 0; top: 0; bottom: 0;
+	margin: auto;
+	padding: 10px;
+	border-radius: 5px;
+	overflow: hidden;
+}
+#lbox .light .close {
+	position: absolute;
+	right: 0;
+	top: 0;
+	background-color: #fff;
+	width: 30px;
+	line-height: 30px;
+	text-align: center;
+}
+
+#lbox .light .text {
+	position: absolute;
+	left: 10px; right: 10px; bottom: 10px;
+	/*background-color: #eee;*/
+	background-color: rgba(255, 255, 255, 0.76);
+	padding: 10px;
+}
+
+h1 {
+	font-size: 50px;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+#swap {
+	width: 800px;
+	border: solid 2px #4c335f;
+	margin: auto;
+	font-size: 0;
+}
+.thumb {
+	display: inline-block;
+	width: 200px;
+}
+.large {
+	display: inline-block;
+}
+#tabbed {
+	border: solid 5px #3484A7;
+	/*padding: 20px;*/
+	width: 800px;
+	margin: auto;
+}
+
+#tabbed .tabs {}
+#tabbed .tabs a {
+	display: inline-block;
+
+	background-color: #655b88;
+	color: #000;
+	text-align: center;
+	width: 262px;
+	line-height: 50px;
+
+	border-radius: 5px 5px 0px 0px;
+
+	text-decoration: none;
+}
+#tabbed .tabs a.theChosenOne { background-color: #7cdde8; }
+
+#tabbed section {
+	background-color: #655b88;
+	/*padding: 20px;*/
+	/*margin-bottom: 20px;*/
+	height: 300px;
+
+	/*line-height: 400px;*/
+	font-size: 20px;
+	text-align: justify;
+}
